@@ -4,12 +4,12 @@
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 50;
 static const unsigned int snap      = 12;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=14";
 //backgroud color
-static const char col_gray1[]       = "#2b2b2b";
+static const char col_gray1[]       = "#ffffff";
 //inactive window border color
 static const char col_gray2[]       = "#5e5e5e";
 //font color
@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "+" };
+static const char *tags[] = { "", "", "", "", "+", "x" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "MateTerm", NULL,       NULL,       0,            1,           -1 },
+	{ "Mate Terminal", NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
